@@ -1,14 +1,12 @@
-import { createStore } from 'vuex'
+import Vuex from "vuex";
+import FormModule from "@/store/modules/FormModule";
+import ContactListModule from "@/store/modules/ContactListModule";
 
-export default createStore({
-  state: {
-  },
-  getters: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
+const store =new Vuex.Store({
   modules: {
-  }
-})
+    FormModule,
+    ContactListModule
+  },
+});
+
+export default store;
